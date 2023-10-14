@@ -1,14 +1,21 @@
 {
-  "name": "pnpx",
-  "version": "0.0.1-beta.1",
-  "description": "",
-  "main": "index.js",
+  "name": "@moushicheng/pnpx",
+  "version": "0.0.1-beta.5",
+  "description": "pnpx=pnpm+npx",
+  "main": "bin/pnpx.cjs",
   "bin": {
-    "pnpx": "index.js"
+    "pnpx": "bin/pnpx.cjs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "nodemon"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.6"
+  },
+  "dependencies": {
+    "tsconfig-paths": "^4.2.0"
+  }
 }
